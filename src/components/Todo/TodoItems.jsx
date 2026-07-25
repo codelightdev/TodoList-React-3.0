@@ -5,7 +5,7 @@ function TodoItems(props) {
     <>
         <div className="flex items-center my-3 gap-2">
             <div className="flex flex-1 items-center cursor-pointer" onClick={() => props.toggleStatus(props.id)}>
-                <img src={props.isComplete ? assets.tickIcon : assets.notTickIcon } alt="" />
+                <img src={props.isComplete ? assets.tickIcon : assets.notTickIcon } alt="" className="w-4" />
                 <p className={`text-slate-700 ml-4 text-[17px] decoration-slate-500 ${props.isComplete ? "line-through" : ""}`}>{props.text}</p>
             </div>
 
